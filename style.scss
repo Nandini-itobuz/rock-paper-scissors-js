@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00001c;
+  width: 100%;
+  height: 100%;
+  padding: 0% 3%;
+}
+
+.score-bar {
+  height: 200px;
+  margin: 30px auto;
+  border-radius: 25px;
+  padding: 3% 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: start;
+
+  .bar-img{
+    width: 25%;
+
+  }
+
+  .start-btn {
+    width: 150px;
+    height: 50px;
+    padding: 1%;
+    margin-top: 3%;
+    border-radius: 20px;
+    border: 0;
+    color: white;
+    background-color: #3a405a;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+}
+
+.score-board {
+  width: 20%;
+  font-size: 3rem;
+  
+  height: 60px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+
+
+#display-btn {
+  margin: auto auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  
+  align-items: center;
+
+  .choose-btn {
+    border: 0px;
+    background: none;
+    margin: 0.5%;
+    width: 20%;
+
+    .paper-img,
+    .rock-img,
+    .scissors-img {
+      width: 100%;
+    }
+  }
+}
+
+.game-box{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .img-holder{
+        margin: 5%;
+        background-color: #00001c;
+        width: 100%;
+        color: white;
+        text-align: center;
+        font-size: 3rem;
+        .rock-img, .scissors-img{
+            width: 50%;
+            padding: 2%;
+            
+        }
+        .enemy-img{
+          margin: auto;
+        }
+    }
+   
+}
+
+.replay-btn{
+  background-color: #00001c;
+  color: white;
+  padding: 1%;
+  border: 0;
+  width: 40%;
+  height: 40px;
+  border-radius: 24px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.container{width: 80%;margin: auto; display: none;}
+
+@media (min-width: 768px) {
+  .score-bar {
+    height: 150px;
+    flex-direction: row;
+    width: 90%;
+
+    .score-board {
+      width: 30%;
+    }
+  }
+
+  #display-btn {
+    .choose-btn,
+    .game-box {
+      width: 10%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #display-btn {
+    .choose-btn {
+      width: 8%;
+    }
+  }
+}
