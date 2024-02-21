@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="score-bar">
-        <div><img src="./images/puzzle-piece-solid.svg" class="bar-img"><img src="./images/title.png"
-                class="score-bar-img"></div>
+      <div>
+        <img src="./images/logo.svg" class="bar-img" /><img
+          src="./images/title.png"
+          class="score-bar-img"
+        />
+      </div>
+      <div>
         <button class="start-btn">START</button>
+        <button class="start-btn quit" onclick="quit()">QUIT</button>
+        
+      </div>
     </div>
 
-    <div class="container" style="background-color: #3a405a;">
-        <div class="game-box">
-            <div class="img-holder" style=" padding: 1%; "><img src="./images/rock.png" class="rock-img choice-user">
-            </div>
-            <div class="img-holder">V/S</div>
-            <div class="img-holder" style=" padding: 1%;"><img src="./images/scissors.png"
-                    class="scissors-img choice-computer"></div>
-        </div>
-        <div style="display: flex; justify-content: center;align-items: center;margin-bottom: 50px;">
-            <div class="score-board">0:0</div>
-        </div>
-
-        <div class="text"
-            style="display: flex; justify-content: center; background-color: #00001c; color: white; font-size: 1.5rem; padding: 1rem;">
-            MAKE&nbsp;&nbsp;YOUR&nbsp;&nbsp;MOVE</div>
-        <div id="display-btn">
-            <button class="choose-btn rock"><img src="./images/rock.png" class="rock-img"></button>
-            <button class="choose-btn paper"><img src="./images/paper.png" class="paper-img"></button>
-            <button class="choose-btn scissors"><img src="./images/scissors.png" class="scissors-img"></button>
-        </div>
-        
-        
+    <div class="container">
+      <div class="game-box">
+        <div class="img-holder box-height" >YOUR PICK:<br /><img class="rock-img choice-user" /></div>
+        <div class="img-holder"><img src="images/enemy.png" class="enemy-img" /></div>
+        <div class="img-holder box-height" > THE HOUSE:<br /><img class="scissors-img choice-computer" /></div>
+      </div>
+      <div class="score-board-main"><div class="score-board">0:0</div></div>
+      <div class="text">MAKE&nbsp;&nbsp;YOUR&nbsp;&nbsp;MOVE</div>
+      <div id="display-btn">
+        <button class="choose-btn rock">
+          <img src="./images/rock.png" class="rock-img" />
+        </button>
+        <button class="choose-btn paper">
+          <img src="./images/paper.png" class="paper-img" />
+        </button>
+        <button class="choose-btn scissors">
+          <img src="./images/scissors.png" class="scissors-img" />
+        </button>
+      </div>
     </div>
-    <div class="results" style="width: 40%; background-color: #3a405a; height: auto; margin: 5% auto;text-align: center; color: white; font-size: 2rem;padding:1%;display: none;">
-        <div>Game over!</div>
-        <button class="replay-btn">Replay</button>
+    <div class="results">
+      <div class="display-results">Game over!</div>
+      <button class="replay-btn">REPLAY<img src="images/rotate-right-solid.svg" class="replay-img" /></button>
+      <button class="replay-btn yes">YES</button>
+      <button class="replay-btn no">N0</button>
     </div>
 
     <script src="./main.js"></script>
-</body>
-
+  </body>
 </html>
