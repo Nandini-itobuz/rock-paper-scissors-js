@@ -76,7 +76,7 @@ function quit() {
   gameContainer[0].style.display = "none";
   yes[0].style.display = "inline-block";
   no[0].style.display = "inline-block";
-  resultsDisplay[0].textContent = "Are you sure you want to quit?";
+  resultsDisplay[0].textContent = "ARE YOU SURE YOU WANT TO QUIT?";
 
   yes[0].addEventListener("click", () => {
     results[0].style.display = "none";
