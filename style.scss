@@ -11,7 +11,6 @@ body {
 .score-bar {
   height: 200px;
   margin: 15px auto 0px auto;
-  border-radius: 25px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -20,30 +19,27 @@ body {
 
   .bar-img {
     width: 25%;
-    &:hover{
-      cursor: pointer;
-    }
-
-    }
-  }
-
-  .start-btn {
-    width: 150px;
-    height: 50px;
-    padding: 1%;
-    margin-top: 3%;
-    border-radius: 20px;
-    border: 0;
-    color: white;
-    background-color: #3a405a;
-    font-size: 1.5rem;
-    font-weight: 600;
-
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
   }
+}
 
+.start-btn {
+  width: 150px;
+  height: 50px;
+  padding: 1%;
+  border-radius: 20px;
+  border: 0;
+  color: white;
+  background-color: #3a405a;
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
 
 .text {
   display: flex;
@@ -101,6 +97,11 @@ body {
     .rock-img,
     .scissors-img {
       width: 100%;
+        
+      &:hover{
+        transform: rotate(0.1turn);
+      }
+      
     }
   }
 }
@@ -166,8 +167,7 @@ body {
   .score-bar {
     height: 150px;
     flex-direction: row;
-    width: 100%;
-
+    width: 80%;
   }
 
   .score-board {
