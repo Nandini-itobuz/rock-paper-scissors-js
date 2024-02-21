@@ -21,7 +21,11 @@ body {
 .score-bar .bar-img {
   width: 25%;
 }
-.score-bar .start-btn {
+.score-bar .bar-img:hover {
+  cursor: pointer;
+}
+
+.start-btn {
   width: 150px;
   height: 50px;
   padding: 1%;
@@ -32,6 +36,9 @@ body {
   background-color: #3a405a;
   font-size: 1.5rem;
   font-weight: 600;
+}
+.start-btn:hover {
+  cursor: pointer;
 }
 
 .text {

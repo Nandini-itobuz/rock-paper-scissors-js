@@ -20,6 +20,11 @@ body {
 
   .bar-img {
     width: 25%;
+    &:hover{
+      cursor: pointer;
+    }
+
+    }
   }
 
   .start-btn {
@@ -33,8 +38,12 @@ body {
     background-color: #3a405a;
     font-size: 1.5rem;
     font-weight: 600;
+
+    &:hover{
+      cursor: pointer;
+    }
   }
-}
+
 
 .text {
   display: flex;
@@ -158,6 +167,7 @@ body {
     height: 150px;
     flex-direction: row;
     width: 100%;
+
   }
 
   .score-board {

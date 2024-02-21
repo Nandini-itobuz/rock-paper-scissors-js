@@ -14,8 +14,8 @@ const replay = document.getElementsByClassName("replay-btn");
 const yes = document.getElementsByClassName("yes");
 const no = document.getElementsByClassName("no");
 
-let scoreUser =0;
-let scoreComputer =0;
+let scoreUser = 0;
+let scoreComputer = 0;
 
 function evaluateInput(userInp, computerInp) {
   if (userInp === computerInp) {
@@ -35,7 +35,7 @@ function evaluateInput(userInp, computerInp) {
   }
 }
 
-function check(){
+function check() {
   if (scoreUser === 3 || scoreComputer === 3) {
     if (scoreUser > scoreComputer) {
       const winScore = scoreUser - scoreComputer;
@@ -52,7 +52,6 @@ function check(){
     text[0].style.display = "none";
   }
 }
-
 
 function setImages(x) {
   if (x === "user") {
@@ -75,8 +74,8 @@ function quit() {
   results[0].style.display = "block";
   replay[0].style.display = "none";
   gameContainer[0].style.display = "none";
-  yes[0].style.display = "inline-block"
-  no[0].style.display = "inline-block"
+  yes[0].style.display = "inline-block";
+  no[0].style.display = "inline-block";
   resultsDisplay[0].textContent = "Are you sure you want to quit?";
 
   yes[0].addEventListener("click", () => {
@@ -126,11 +125,11 @@ startBtn[0].addEventListener("click", () => {
 });
 
 replay[0].addEventListener("click", () => {
-  text[0].style.display ="flex"
-  container.style.display ="flex"
-  results[0].style.display ="none"
-  scoreUser =0;
-  scoreComputer =0;
+  text[0].style.display = "flex";
+  container.style.display = "flex";
+  results[0].style.display = "none";
+  scoreUser = 0;
+  scoreComputer = 0;
   let score = `${scoreUser} : ${scoreComputer}`;
   scoreBoard[0].textContent = score;
 });
