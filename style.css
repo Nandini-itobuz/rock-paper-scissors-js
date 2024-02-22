@@ -52,11 +52,10 @@ body {
 }
 
 .results {
-  width: 100%;
-  width: 40%;
+  width: 90%;
   background-color: #3a405a;
   height: auto;
-  margin: auto 5%;
+  margin: auto;
   text-align: center;
   color: white;
   font-size: 1.5rem;
@@ -71,7 +70,7 @@ body {
   color: white;
   padding: 1%;
   border: 0;
-  width: 40%;
+  width: 80%;
   height: 40px;
   border-radius: 24px;
   margin: 20px auto;
@@ -124,13 +123,14 @@ body {
   width: 100%;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1%;
   align-items: center;
 }
 .game-box .img-holder {
   margin: 5%;
   background-color: #00001c;
-  width: 100%;
+  width: 90%;
   color: white;
   text-align: center;
   font-size: 12px;
@@ -140,7 +140,7 @@ body {
 .game-box .img-holder .rock-img,
 .game-box .img-holder .scissors-img {
   margin-top: 10px;
-  width: 50%;
+  width: 70%;
   padding: 2%;
 }
 .game-box .img-holder .rock-img:hover,
@@ -153,7 +153,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 80%;
   margin: 10px auto;
   display: none;
   background-color: #3a405a;
@@ -161,6 +161,7 @@ body {
 
 .replay-img {
   width: 10%;
+  height: 90%;
   margin: 1px 10px;
 }
 
@@ -172,8 +173,14 @@ body {
   .container {
     width: 80%;
   }
+  .box-height {
+    height: 160px;
+  }
 }
 @media (min-width: 768px) {
+  .results {
+    width: 40%;
+  }
   .score-bar {
     height: 150px;
     flex-direction: row;
@@ -184,7 +191,7 @@ body {
     width: 10%;
   }
   .box-height {
-    height: 170px;
+    height: 180px;
   }
 }
 .container {
@@ -196,6 +203,6 @@ body {
     width: 8%;
   }
   .box-height {
-    height: 200px;
+    height: 260px;
   }
 }/*# sourceMappingURL=style.css.map */

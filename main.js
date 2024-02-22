@@ -26,7 +26,7 @@ function evaluateInput(userInp, computerInp) {
     return "user";
   } else if (userInp === 1 && computerInp === 0) {
     return "user";
-  } else if (userInp === 1 && computerInp === 0) {
+  } else if (userInp === 1 && computerInp === 2) {
     return "computer";
   } else if (userInp === 2 && computerInp === 0) {
     return "computer";
@@ -112,7 +112,7 @@ container.addEventListener("click", (event) => {
     userChoice[0].setAttribute("src", "images/paper.png");
     const x = evaluateInput(userInput, computerInput);
     setImages(x);
-  } else if (event.target.classList.contains("scissors-img")) {
+  } else if(event.target.classList.contains("scissors-img")) {
     userInput = 2;
     userChoice[0].setAttribute("src", "images/scissors.png");
     const x = evaluateInput(userInput, computerInput);
